@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#hero {
+    position: relative;
+}
+
+#hero video {
+        height: 100vh;
+        width: 100%;
+        background-position:center;
+        z-index: 10;
+        object-fit: cover;
+    }
+
+#hero .content {
+        background: rgba(0,0,0,0.5);
+        height: 100%;
+        width: 100%;
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+#hero .content h1 {
+            color: #FFF;
+            font-family: Arial,sans-serif;
+        }
+
+#hero .content p {
+            font-size: 18px;
+            color: #FFF;
+            font-family: Arial,sans-serif;
+        }
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px;
+    align-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-github {
+    background: 0f0f0f;
+    color: white;
+}
+
+.fa-linkedin {
+    background: 0f0f0f;
+    color: white;
+}
+
+.fa-instagram {
+    background: 0f0f0f;
+    color: white;
+}
+
+.hero-top {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20%;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-top p {
+        color: white;
+    }
+
+.music-controller {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    color: white;
+    font-size: 14px;
+}
+
+.music-controller button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        margin: 0 15px;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+.music-controller input[type="range"] {
+        flex: 1;
+        margin: 0 15px;
+    }
+.music-controller .title {
+        flex: 1;
+        text-align: center;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+#hero {
+    position: relative;
+    z-index: 1;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 20;
+}

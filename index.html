@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerem Kalyoncu</title>
+    <link rel="icon" href="ezgif-3-0275c42d7e.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="col-md-12 hero-top">
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+            <div style="text-align: center;">
+                <a href="https://www.linkedin.com/in/kerem-kalyoncu-0753k/" class="fa fa-linkedin" target="_blank" style="font-size: 24px;"></a>
+                <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; margin-top: 10px;">LinkedIn</p>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://www.instagram.com/krm_kalyoncu/" target="_blank" class="fa fa-instagram" style="font-size: 24px;"></a>
+                <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; margin-top: 10px;">Instagram</p>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://github.com/NosPro" target="_blank" class="fa fa-github" style="font-size: 24px;"></a>
+                <p style="font-family: 'Times New Roman', Times, serif; font-size: 18px; margin-top: 10px;">Github</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero">
+        <video autoplay loop muted>
+            <source src="Fire Stock Footage - Inferno Background Video Animation - Motion Background Loop (4K).mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+
+    <audio id="audioPlayer" loop autoplay>
+        <source src="Solo.mp3" type="audio/mp3" />
+        Tarayıcınız ses öğesini desteklemiyor.
+    </audio>
+      <div class="music-controller">
+        <button onclick="document.getElementById('audioPlayer').play()">&#9654;</button>
+        <button onclick="document.getElementById('audioPlayer').pause()">&#10074;&#10074;</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" oninput="document.getElementById('audioPlayer').volume = this.value">
+        <div class="title">River - Solo</div>
+    </div>
+
+    <div class="col-md-12 hero-top">
+        <div class="text-overlay">
+            <p style="font-family: 'Times New Roman', Times, serif;font-size: 36px;margin: revert-layer;">Kerem Kalyoncu</p>
+            <p style="font-family: 'Arial', sans-serif; font-size: 24px; margin: 0;">Yazılım Mühendisliği Öğrencisi</p>
+        </div>
+    </div>
+    
+
+    <script>
+        document.getElementById('volumeControl').value = document.getElementById('audioPlayer').volume;
+    </script>
+
+</body>
+</html>
